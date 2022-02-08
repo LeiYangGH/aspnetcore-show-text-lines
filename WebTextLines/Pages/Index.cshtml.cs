@@ -17,6 +17,7 @@ namespace WebTextLines.Pages
 
         public void OnGet()
         {
+            // you need change the fullName, and may need some exception handling
             string fullName = Path.Combine(_hostEnvironment.WebRootPath, "js/site.js");
             Lines = System.IO.File.ReadAllLines(fullName);
         }
